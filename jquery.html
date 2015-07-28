@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>jQuery usage</title>
+		<link href="dist/css/bootstrap.min.css" type='text/css' rel="stylesheet" />
+		<script src="jquery-1.11.3.min.js"></script>
+		<script>
+			var main = function() {
+				$('.link').click(function(){
+		// 			  $( ".dropdown" ).fadeIn( "slow", function() {
+  //   // Animation complete
+  // });
+					  $('.dropdown').toggle();
+				});
+			}
+			$(document).ready(main);
+		</script>
+	</head>
+
+	<body>
+		<a href="#" class="link">What the hell?</a>
+
+		<ul class="dropdown">
+		<li>wow</li>
+		<li>nice</li>
+		<li>come on!</li>
+		</ul>
+	</body>
